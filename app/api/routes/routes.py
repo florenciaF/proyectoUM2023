@@ -10,6 +10,7 @@ def get_examples():
 
 @example_blueprint.route('/', methods=['POST'])
 def create_example():
+    # request_data = request.get_json()
     data = {"message": "Success", "method": "POST"}
     return jsonify(data), 201
  
